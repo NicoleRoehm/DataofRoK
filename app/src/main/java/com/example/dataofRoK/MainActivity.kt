@@ -1,7 +1,8 @@
-package com.example.rokdata
+package com.example.dataofRoK
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.rokdata.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

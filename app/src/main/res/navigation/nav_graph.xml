@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/logInFragment"
-        android:name="com.example.rokdata.ui.LogInFragment"
+        android:name="com.example.dataofRoK.ui.LogInFragment"
         android:label="LogInFragment"
         tools:layout="@layout/fragment_login"
         >
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.rokdata.ui.HomeFragment"
+        android:name="com.example.dataofRoK.ui.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"/>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.rokdata
+package com.example.dataofRoK
 
 import androidx.lifecycle.ViewModel
 

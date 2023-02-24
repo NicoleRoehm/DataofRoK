@@ -1,4 +1,4 @@
-package com.example.rokdata
+package com.example.dataofRoK
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
