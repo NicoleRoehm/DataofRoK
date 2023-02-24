@@ -23,11 +23,13 @@
 
     <ImageButton
         android:id="@+id/profil_fragment_trailling_button"
-        android:layout_width="36dp"
-        android:layout_height="51dp"
+        android:layout_width="28dp"
+        android:layout_height="47dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_materialtoolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8"
@@ -36,9 +38,8 @@
 
     <ImageButton
         android:id="@+id/profil_fragment_search_button"
-        android:layout_width="34dp"
-        android:layout_height="51dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="28dp"
+        android:layout_height="0dp"
         android:background="@drawable/backroundtoolbar"
         app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_trailling_button"
         app:layout_constraintEnd_toStartOf="@+id/profil_fragment_trailling_button"
@@ -48,9 +49,8 @@
 
     <ImageButton
         android:id="@+id/profil_fragment_bag_button"
-        android:layout_width="37dp"
+        android:layout_width="28dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="1dp"
         android:background="@drawable/backroundtoolbar"
         app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_search_button"
         app:layout_constraintEnd_toStartOf="@+id/profil_fragment_search_button"
@@ -520,6 +520,7 @@
         android:text="Profil"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_navigationsbar"
         app:layout_constraintEnd_toEndOf="@+id/profil_fragment_profilicon"
         app:layout_constraintStart_toStartOf="@+id/profil_fragment_profilicon"
         app:layout_constraintTop_toBottomOf="@+id/profil_fragment_profilicon" />
@@ -544,6 +545,7 @@
         android:text="Kingdoms"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_navigationsbar"
         app:layout_constraintEnd_toEndOf="@+id/profil_fragment_Kingdomsicon"
         app:layout_constraintStart_toStartOf="@+id/profil_fragment_Kingdomsicon"
         app:layout_constraintTop_toBottomOf="@+id/profil_fragment_Kingdomsicon" />
@@ -568,6 +570,7 @@
         android:text="Members"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_navigationsbar"
         app:layout_constraintEnd_toEndOf="@+id/profil_fragment_Membersicon"
         app:layout_constraintStart_toStartOf="@+id/profil_fragment_Membersicon"
         app:layout_constraintTop_toBottomOf="@+id/profil_fragment_Membersicon" />
@@ -592,6 +595,7 @@
         android:text="Home"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profil_fragment_navigationsbar"
         app:layout_constraintEnd_toEndOf="@+id/profil_fragment_homeicon"
         app:layout_constraintStart_toStartOf="@+id/profil_fragment_homeicon"
         app:layout_constraintTop_toBottomOf="@+id/profil_fragment_homeicon" />

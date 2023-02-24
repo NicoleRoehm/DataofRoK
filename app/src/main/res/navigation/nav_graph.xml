@@ -20,4 +20,9 @@
         android:name="com.example.dataofRoK.ui.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.example.dataofRoK.ui.ProfilFragment"
+        android:label="ProfilFragment"
+        tools:layout="@layout/fragment_profil"/>
 </navigation>

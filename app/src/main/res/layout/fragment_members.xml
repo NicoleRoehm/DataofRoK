@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/members_item_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backround"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/members_fragment_navigationsbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/members_fragment_materialtoolbar"
+        tools:itemCount="20"
+        tools:listitem="@layout/members_item"
+        app:spanCount="2"/>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/members_fragment_materialtoolbar"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:background="@drawable/backroundtoolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Members"
+        app:titleCentered="true" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_filterbutton"
+        android:layout_width="28dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_unions_button"
+        app:layout_constraintEnd_toStartOf="@+id/members_fragment_unions_button"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_unions_button"
+        app:srcCompat="@drawable/vector"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_trailling_button"
+        android:layout_width="28dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_materialtoolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.47"
+        app:srcCompat="@drawable/trailing_icon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_search_button"
+        android:layout_width="28dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_trailling_button"
+        app:layout_constraintEnd_toStartOf="@+id/members_fragment_trailling_button"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_trailling_button"
+        app:srcCompat="@drawable/search_icon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_unions_button"
+        android:layout_width="28dp"
+        android:layout_height="0dp"
+        android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_search_button"
+        app:layout_constraintEnd_toStartOf="@+id/members_fragment_search_button"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_search_button"
+        app:srcCompat="@drawable/union"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/members_fragment_navigationsbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/backroundtoolbar"
+        android:foreground="@drawable/backroundtoolbar"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="BottomAppBar" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_Kingdomsicon"
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/members_fragment_navigationsbar"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_navigationsbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/casle_icon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/members_fragment_text_Kingdoms"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="casual"
+        android:text="Kingdoms"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_navigationsbar"
+        app:layout_constraintEnd_toEndOf="@+id/members_fragment_Kingdomsicon"
+        app:layout_constraintStart_toStartOf="@+id/members_fragment_Kingdomsicon"
+        app:layout_constraintTop_toBottomOf="@+id/members_fragment_Kingdomsicon" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_members_button"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        android:background="@drawable/backroundtoolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_Kingdomsicon"
+        app:layout_constraintStart_toEndOf="@+id/members_fragment_Kingdomsicon"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_Kingdomsicon"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/mitglieder" />
+
+    <TextView
+        android:id="@+id/members_fragment_text_members"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="casual"
+        android:text="Members"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/members_fragment_members_button"
+        app:layout_constraintStart_toStartOf="@+id/members_fragment_members_button"
+        app:layout_constraintTop_toBottomOf="@+id/members_fragment_members_button" />
+
+    <ImageButton
+        android:id="@+id/members_fragment_home_button"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_members_button"
+        app:layout_constraintStart_toEndOf="@+id/members_fragment_members_button"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_members_button"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/members_fragment_text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="casual"
+        android:text="Home"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_navigationsbar"
+        app:layout_constraintEnd_toEndOf="@+id/members_fragment_home_button"
+        app:layout_constraintStart_toStartOf="@+id/members_fragment_home_button"
+        app:layout_constraintTop_toBottomOf="@+id/members_fragment_home_button" />
+
+    <ImageButton
+        android:id="@+id/members_frragment_profil_button"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/members_fragment_home_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/members_fragment_home_button"
+        app:layout_constraintTop_toTopOf="@+id/members_fragment_home_button"
+        app:srcCompat="@drawable/profilicon" />
+
+    <TextView
+        android:id="@+id/members_fragment_text_profil"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="casual"
+        android:text="Profil"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/members_frragment_profil_button"
+        app:layout_constraintStart_toStartOf="@+id/members_frragment_profil_button"
+        app:layout_constraintTop_toBottomOf="@+id/members_frragment_profil_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
