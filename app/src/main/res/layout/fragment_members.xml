@@ -133,13 +133,13 @@
         app:layout_constraintStart_toEndOf="@+id/members_fragment_Kingdomsicon"
         app:layout_constraintTop_toTopOf="@+id/members_fragment_Kingdomsicon"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/mitglieder" />
+        app:srcCompat="@drawable/mitglieder"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/members_fragment_text_members"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
         android:fontFamily="casual"
         android:text="Members"
         android:textSize="12sp"
@@ -154,16 +154,17 @@
         android:layout_width="40dp"
         android:layout_height="0dp"
         android:layout_marginStart="72dp"
+        android:background="@drawable/backroundtoolbar"
         app:layout_constraintBottom_toBottomOf="@+id/members_fragment_members_button"
         app:layout_constraintStart_toEndOf="@+id/members_fragment_members_button"
         app:layout_constraintTop_toTopOf="@+id/members_fragment_members_button"
-        app:srcCompat="@drawable/home" />
+        app:srcCompat="@drawable/home"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/members_fragment_text_home"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="2dp"
         android:fontFamily="casual"
         android:text="Home"
         android:textSize="12sp"
@@ -174,16 +175,18 @@
         app:layout_constraintTop_toBottomOf="@+id/members_fragment_home_button" />
 
     <ImageButton
-        android:id="@+id/members_frragment_profil_button"
+        android:id="@+id/members_fragment_profil_button"
         android:layout_width="40dp"
         android:layout_height="0dp"
         android:layout_marginStart="72dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/backroundtoolbar"
         app:layout_constraintBottom_toBottomOf="@+id/members_fragment_home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/members_fragment_home_button"
         app:layout_constraintTop_toTopOf="@+id/members_fragment_home_button"
-        app:srcCompat="@drawable/profilicon" />
+        app:srcCompat="@drawable/profilicon"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/members_fragment_text_profil"
@@ -194,8 +197,8 @@
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/members_frragment_profil_button"
-        app:layout_constraintStart_toStartOf="@+id/members_frragment_profil_button"
-        app:layout_constraintTop_toBottomOf="@+id/members_frragment_profil_button" />
+        app:layout_constraintEnd_toEndOf="@+id/members_fragment_profil_button"
+        app:layout_constraintStart_toStartOf="@+id/members_fragment_profil_button"
+        app:layout_constraintTop_toBottomOf="@+id/members_fragment_profil_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
