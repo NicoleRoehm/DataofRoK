@@ -10,11 +10,18 @@ class KingdomAdapter ( var kingdomList: ArrayList<Kingdoms>,
                        val onClick : (Kingdoms) -> Unit )
                     : RecyclerView.Adapter<KingdomAdapter.KingdomHolder>() {
 
+    private var dataset = listOf<Kingdoms>()
+
     class KingdomHolder (val binding: KingdomItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(kingdoms:Kingdoms){
             binding.kingdomtextItem.text = kingdoms.name
             binding.kingdomnumberItem.text = kingdoms.number.toString()
         }
+    }
+
+    fun submitList(list: List<Kingdoms>){
+        dataset = list
+        notifyItemInserted(0)
     }
 
 

@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.dataofRoK.MainViewModel
+import com.example.dataofRoK.adapter.KingdomAdapter
+import com.example.dataofRoK.data.model.Kingdoms
 import com.example.rokdata.databinding.FragmentKingdomsBinding
 
 
@@ -27,6 +29,14 @@ class KingdomsFragment: Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val kingdomAdapter = KingdomAdapter()
+        binding.kingdomsItemRecyclerview.adapter = kingdomAdapter
+
+        viewModel.kingdoms.observe(viewLifecycleOwner){
+            kingdomAdapter.submitList(it)
+        }
+
     }
 
 }

@@ -1,4 +1,3 @@
 package com.example.dataofRoK.data.model
 
-class Members {
-}
+data class Members (val name: String)
