@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import com.example.dataofRoK.data.Repository
 import com.example.dataofRoK.data.model.Kingdoms
 
-class MainViewModel : ViewModel() {
+class KingdomViewModel : ViewModel() {
 
     private val repository = Repository()
 

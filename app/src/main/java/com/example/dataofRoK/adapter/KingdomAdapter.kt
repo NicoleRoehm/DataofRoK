@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.dataofRoK.data.model.Kingdoms
 import com.example.rokdata.databinding.KingdomItemBinding
 
-class KingdomAdapter ( var kingdomList: ArrayList<Kingdoms>,
-                       val onClick : (Kingdoms) -> Unit )
+class KingdomAdapter ( var kingdomList: List<Kingdoms>,
+                      /* val onClick : (Kingdoms) -> Unit */)
                     : RecyclerView.Adapter<KingdomAdapter.KingdomHolder>() {
 
     private var dataset = listOf<Kingdoms>()
