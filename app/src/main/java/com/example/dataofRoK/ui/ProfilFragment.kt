@@ -21,8 +21,12 @@ class ProfilFragment : Fragment() {
         _binding = FragmentProfilBinding.inflate(inflater,container,false)
         val view = binding.root
         return view
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
     }
 }
