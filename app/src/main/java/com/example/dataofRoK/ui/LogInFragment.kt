@@ -28,6 +28,10 @@ class LogInFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        viewModel.writeID()
+        binding.loginFragmentUsernameedit.editText
+        binding.loginFragmentPassword.text
+        binding.loginFragmentButton.setOnClickListener {
+
+        }
     }
 }
