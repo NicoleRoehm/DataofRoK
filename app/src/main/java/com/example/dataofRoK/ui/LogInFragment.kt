@@ -14,7 +14,7 @@ class LogInFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
 
-    private  val viewModel = LogInViewModel by viewModels ()
+    private  val viewModel : LogInViewModel by viewModels ()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,6 +28,6 @@ class LogInFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-
+        viewModel.writeID()
     }
 }

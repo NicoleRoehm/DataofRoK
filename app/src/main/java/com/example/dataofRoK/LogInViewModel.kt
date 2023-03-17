@@ -6,12 +6,13 @@ import androidx.lifecycle.ViewModel
 
 class LogInViewModel:ViewModel (){
 
-    private var _iD = MutableLiveData<Int>()
-    val id : LiveData <Int>
+    private var _iD = MutableLiveData<List<Int>>()
+    val id : LiveData <List<Int>>
     get() = _iD
 
     fun writeID(){
 
-
     }
+
+
 }
