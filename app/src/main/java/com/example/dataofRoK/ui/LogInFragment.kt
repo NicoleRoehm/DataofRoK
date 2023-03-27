@@ -23,15 +23,20 @@ class LogInFragment : Fragment() {
     ): View? {
         _binding = FragmentLoginBinding.inflate(inflater,container,false)
         val view = binding.root
-        return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.loginFragmentUsernameedit.editText
         binding.loginFragmentPassword.text
         binding.loginFragmentButton.setOnClickListener {
 
         }
+
+        return view
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
+    }
+
+
 }
