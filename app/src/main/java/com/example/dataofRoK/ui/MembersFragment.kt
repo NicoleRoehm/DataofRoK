@@ -22,12 +22,10 @@ class MembersFragment: Fragment() {
     ): View? {
         _binding = FragmentMembersBinding.inflate(inflater,container,false)
         val view = binding.root
+
+
         return view
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
 

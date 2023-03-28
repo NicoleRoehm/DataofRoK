@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_homeFragment_to_kingdomsFragment"
             app:destination="@id/kingdomsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_membersFragment"
+            app:destination="@id/membersFragment" />
     </fragment>
     <fragment
         android:id="@+id/profilFragment"

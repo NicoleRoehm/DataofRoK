@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.dataofRoK.KingdomViewModel
 import com.example.rokdata.databinding.FragmentKingdomsBinding
 import com.example.dataofRoK.adapter.KingdomAdapter
-
+import com.example.rokdata.R
 
 
 class KingdomsFragment: Fragment() {
@@ -25,10 +26,7 @@ class KingdomsFragment: Fragment() {
     ): View? {
         _binding = FragmentKingdomsBinding.inflate(inflater,container,false)
         val view = binding.root
-        return view
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         val kingdomAdapter = KingdomAdapter(viewModel.kingdoms.value!!)
         binding.kingdomsItemRecyclerview.adapter = kingdomAdapter
@@ -37,7 +35,19 @@ class KingdomsFragment: Fragment() {
             kingdomAdapter.submitList(it)
         }
 
+        binding.kingdomsFragmentHomeButton.setOnClickListener {
+            findNavController().navigate(R.id.action_kingdomsFragment_to_homeFragment)
+        }
+        binding.kingdomsFragmentMembersButton.setOnClickListener {
+            findNavController().navigate(R.id.action_kingdomsFragment_to_membersFragment)
+        }
+        binding.kingdomsFragmentProfilButton.setOnClickListener {
+            findNavController().navigate(R.id.action_kingdomsFragment_to_profilFragment)
+        }
+
+        return view
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

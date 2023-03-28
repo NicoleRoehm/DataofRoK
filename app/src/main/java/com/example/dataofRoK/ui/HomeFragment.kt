@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.dataofRoK.LogInViewModel
+import com.example.rokdata.R
 import com.example.rokdata.databinding.FragmentHomeBinding
 
 
@@ -32,14 +34,15 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.homeFragmentIdtext.text = viewModel.id.value.toString()
-        binding.homeFragmentKingdoms.setOnClickListener {
 
+        binding.homeFragmentKingdoms.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_kingdomsFragment)
         }
         binding.homeFragmentMembers.setOnClickListener {
-
+            findNavController().navigate(R.id.action_homeFragment_to_membersFragment)
         }
         binding.homeFragmentProfil.setOnClickListener {
-
+            findNavController().navigate(R.id.action_homeFragment_to_profilFragment)
         }
     }
 

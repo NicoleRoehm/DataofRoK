@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.dataofRoK.LogInViewModel
+import com.example.rokdata.R
 import com.example.rokdata.databinding.FragmentLoginBinding
 
 class LogInFragment : Fragment() {
@@ -27,16 +29,15 @@ class LogInFragment : Fragment() {
         binding.loginFragmentUsernameedit.editText
         binding.loginFragmentPassword.text
         binding.loginFragmentButton.setOnClickListener {
-
+            findNavController().navigate(R.id.action_logInFragment_to_homeFragment)
         }
 
         return view
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onDestroyView() {
+        super.onDestroyView()
 
-
+        _binding = null
     }
-
-
 }
