@@ -6,8 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.DataofRoK.R
+import com.example.DataofRoK.databinding.FragmentMembersBinding
 import com.example.dataofRoK.MembersViewModel
-import com.example.rokdata.databinding.FragmentMembersBinding
+
 
 class MembersFragment: Fragment() {
 
@@ -21,6 +24,16 @@ class MembersFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentMembersBinding.inflate(inflater,container,false)
+
+        binding.membersFragmentHomeButton.setOnClickListener {
+            findNavController().navigate(R.id.action_membersFragment_to_homeFragment)
+        }
+        binding.membersFragmentProfilButton.setOnClickListener {
+            findNavController().navigate(R.id.action_membersFragment_to_profilFragment)
+        }
+        binding.membersFragmentKingdomsicon.setOnClickListener {
+            findNavController().navigate(R.id.action_membersFragment_to_kingdomsFragment)
+        }
         val view = binding.root
 
 

@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.example.DataofRoK.R
+import com.example.DataofRoK.databinding.FragmentHomeBinding
 import com.example.dataofRoK.LogInViewModel
-import com.example.rokdata.R
-import com.example.rokdata.databinding.FragmentHomeBinding
+
+
 
 
 class HomeFragment : Fragment() {
@@ -26,14 +28,10 @@ class HomeFragment : Fragment() {
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater,container,false)
        val view = binding.root
-
-
-        return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
-        binding.homeFragmentIdtext.text = viewModel.id.value.toString()
+        binding.homeFragmentNametext.text
+        binding.homeFragmentWelcomeText
+        binding.homeFragmentProfilpicture
+        binding.homeFragmentIdtext.text = viewModel.iD.value.toString()
 
         binding.homeFragmentKingdoms.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_kingdomsFragment)
@@ -44,6 +42,13 @@ class HomeFragment : Fragment() {
         binding.homeFragmentProfil.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_profilFragment)
         }
+
+        return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+
     }
 
     override fun onDestroyView() {

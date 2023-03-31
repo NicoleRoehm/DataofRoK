@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import com.example.DataofRoK.databinding.FragmentProfilBinding
 import com.example.dataofRoK.MembersViewModel
 
-import com.example.rokdata.databinding.FragmentProfilBinding
 
 class ProfilFragment : Fragment() {
 

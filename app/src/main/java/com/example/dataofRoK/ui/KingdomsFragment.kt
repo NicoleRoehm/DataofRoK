@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
+import com.example.DataofRoK.R
+import com.example.DataofRoK.databinding.FragmentKingdomsBinding
 import com.example.dataofRoK.KingdomViewModel
-import com.example.rokdata.databinding.FragmentKingdomsBinding
 import com.example.dataofRoK.adapter.KingdomAdapter
-import com.example.rokdata.R
+
 
 
 class KingdomsFragment: Fragment() {

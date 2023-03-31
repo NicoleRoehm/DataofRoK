@@ -10,7 +10,4 @@ class LogInViewModel:ViewModel (){
     val iD : LiveData <Int>
     get() = _iD
 
-
-
-
 }

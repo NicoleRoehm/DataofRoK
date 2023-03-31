@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.rokdata'
+    namespace 'com.example.DataofRoK'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.rokdata"
+        applicationId "com.example.dataofrok"
         minSdk 24
         targetSdk 33
         versionCode 1

@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.example.DataofRoK.R
+import com.example.DataofRoK.databinding.FragmentLoginBinding
 import com.example.dataofRoK.LogInViewModel
-import com.example.rokdata.R
-import com.example.rokdata.databinding.FragmentLoginBinding
+
 
 class LogInFragment : Fragment() {
 
