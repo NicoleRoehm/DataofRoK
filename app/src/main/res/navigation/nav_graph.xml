@@ -78,4 +78,9 @@
             android:id="@+id/action_membersFragment_to_profilFragment"
             app:destination="@id/profilFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.dataofRoK.ui.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"/>
 </navigation>

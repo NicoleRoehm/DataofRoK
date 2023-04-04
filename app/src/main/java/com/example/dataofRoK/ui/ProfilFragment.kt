@@ -24,17 +24,6 @@ class ProfilFragment : Fragment() {
     ): View? {
         _binding = FragmentProfilBinding.inflate(inflater,container,false)
 
-        binding.profilFragmentId.text
-        binding.profilFragmentDeathtroops.text
-        binding.profilFragmentAlliance.text
-        binding.profilFragmentAllkills.text
-        binding.ProfilFragmentTextKingdom.text
-        binding.profilFragmentHelpclicks.text
-        binding.profilFragmentKillpoints.text
-        binding.profilFragmentKingdom.text
-
-
-
 
         val view = binding.root
 

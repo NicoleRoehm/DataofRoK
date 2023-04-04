@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.DataofRoK.R
@@ -19,7 +20,7 @@ class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: LogInViewModel by viewModels()
+    private val viewModel: LogInViewModel by activityViewModels ()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,28 +28,10 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentHomeBinding.inflate(inflater,container,false)
-       val view = binding.root
-        binding.homeFragmentNametext.text
-        binding.homeFragmentWelcomeText
-        binding.homeFragmentProfilpicture
-        binding.homeFragmentIdtext.text = viewModel.iD.value.toString()
 
-        binding.homeFragmentKingdoms.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_kingdomsFragment)
-        }
-        binding.homeFragmentMembers.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_membersFragment)
-        }
-        binding.homeFragmentProfil.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_profilFragment)
-        }
+       val view = binding.root
 
         return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
-
     }
 
     override fun onDestroyView() {
